@@ -42,6 +42,10 @@ Just the parts you need, and nothing else!
 
 Module-Inlinify will import this file compute the output, and replace the contents of the file if the output is a simple value. This means that you can write any valid node code in these modules. Variables, function calls, requiring modules are all fair-game.
 
+### implicit BRFS
+
+If you have a simple module the reads a file, transforms it and then finally exports a string, you can replace it with the output string. You essentially get `brfs` for free, as long is it isolated in a seperate file, and uses the synchrnous form.
+
 ### Usage 
 
 The usage is fairly straight-forward.
@@ -56,3 +60,7 @@ In your package.json file add a section config for module-inlinify, and mention 
 This would inline the results of all modules whose paths end in `.inline.js`
 
 Now, you can just add the transform to your browserify command, and you're done.
+
+## Roadmad
+
+[ ] Support for async using promises?
