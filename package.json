@@ -1,0 +1,15 @@
+{
+  "name": "module-inlinify",
+  "version": "1.0.0",
+  "description": "A simple browserify transform to inline the output of particular scripts.",
+  "main": "index.js",
+  "keywords": [
+    "browserify-transform"
+  ],
+  "author": "Naman Goel",
+  "license": "MIT",
+  "dependencies": {
+    "browserify-transform-tools": "^1.4.2",
+    "glob-to-regexp": "0.0.2"
+  }
+}
