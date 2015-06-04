@@ -1,6 +1,10 @@
 # module-inlinify
 A simple browserify transform to inline the results of some of the modules.
 
+```
+npm install module-inlinify
+```
+
 It's time to stop choosing between developer productivity and performance for the front-end
 Using this browserify transform, you can take certain modules and inline the results.
 
