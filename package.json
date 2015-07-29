@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple browserify transform to inline the output of particular scripts.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmn/module-inlinify.git"
+  },
   "keywords": [
     "browserify-transform"
   ],

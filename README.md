@@ -1,5 +1,5 @@
 # module-inlinify
-A simple browserify transform to inline the results of some of the modules.
+A simple `browserify` transform to inline the results of some of the modules.
 
 ```
 npm install module-inlinify
@@ -32,7 +32,7 @@ The `StyleSheet.create` function converts the object into a simple object that m
 
 This is great for developer productivity, but you shouldn't have to pay for that with all your CSS in your JS in production.
 
-If you apply the inlinify transform, and set the config to include this file, it would be transformed to:
+If you apply the module-inlinify transform, and set the config to include this file, it would be transformed to:
 
 ```
 module.export = {"container": "_jsie0", "item":"_hie38"}
@@ -44,9 +44,9 @@ Module-Inlinify will import this file compute the output, and replace the conten
 
 ### implicit BRFS
 
-If you have a simple module the reads a file, transforms it and then finally exports a string, you can replace it with the output string. You essentially get `brfs` for free, as long is it isolated in a seperate file, and uses the synchrnous form.
+If you have a simple module the reads a file, transforms it and then finally exports a string, you can replace it with the output string. You essentially get `brfs` for free, as long is it isolated in a separate file, and uses the synchronous form.
 
-### Usage 
+### Usage
 
 The usage is fairly straight-forward.
 
@@ -59,7 +59,7 @@ In your package.json file add a section config for module-inlinify, and mention 
 ```
 This would inline the results of all modules whose paths end in `.inline.js`
 
-Now, you can just add the transform to your browserify command, and you're done.
+Now, you can just add the transform to your `browserify` command, and you're done.
 
 ## Roadmad
 
