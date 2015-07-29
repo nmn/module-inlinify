@@ -1,6 +1,6 @@
 {
   "name": "module-inlinify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple browserify transform to inline the output of particular scripts.",
   "main": "index.js",
   "repository": {
